@@ -11,9 +11,7 @@ export const databaseProviders = [
         username: 'root',
         password: '1234',
         database: 'db_kolab_employees',
-        entities: [
-            __dirname + '/../**/*.entity{.ts,.js}',
-        ],
+        entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
       });
 

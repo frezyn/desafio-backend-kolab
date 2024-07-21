@@ -11,9 +11,7 @@ import * as cookieParser from 'cookie-parser';
   providers: [],
 })
 export class AppModule {
-  configure(consumer: MiddlewareConsumer){
-    consumer
-    .apply(cookieParser())
-    .forRoutes('*');
+  configure(consumer: MiddlewareConsumer) {
+    consumer.apply(cookieParser()).forRoutes('*');
   }
 }
